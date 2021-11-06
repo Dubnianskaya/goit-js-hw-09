@@ -18,3 +18,13 @@
     font-size: 24px;
     font-weight: 500;
 }
+
+.notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(34, 226, 34);
+}

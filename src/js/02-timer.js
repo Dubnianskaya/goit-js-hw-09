@@ -10,6 +10,7 @@ const refs = {
     hours: document.querySelector("span[data-hours]"),
     minutes: document.querySelector("span[data-minutes]"),
     seconds: document.querySelector("span[data-seconds]"),
+    notification: document.querySelector(".notification"),
 };
 
 let selectedTime = null;
@@ -52,6 +53,7 @@ function onStartClick() {
         const deltaTime = selectedTime - currentTime;
         if (selectedTime <= currentTime) {
             clearInterval(timerId);
+            refs.notification.textContent = "Ура! Время пришло!";
             return;
         } 
         const time = convertTime(deltaTime);
